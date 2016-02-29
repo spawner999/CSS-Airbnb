@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  padding: .5em;
+  @include flex-grid-row();
+  @include flex-grid-row-align(left, null);
+  @include e("toggle"){
+    @include flex-grid-column(4);
+    color: $pink;
+  }
+  @include e("logo"){
+    height: 32px;
+    width: 103px;
+    @include flex-grid-column(shrink);
+    @include bg-img("../img/logo.png");
+  }
+  @include e("nav"){
+    display: none;
+  }
+}
