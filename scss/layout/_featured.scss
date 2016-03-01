@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the featured div of the site/application.
+// -----------------------------------------------------------------------------
+
 .featured {
   padding: 2em 0;
   @include flex-container(center, bottom);

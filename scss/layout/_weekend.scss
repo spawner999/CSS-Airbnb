@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the weekend div of the site/application.
+// -----------------------------------------------------------------------------
+.weekend{
+  padding: 4em 0;
+  background-color: #EDEFED;
+  color: #565A5C;
+  text-align: center;
+  h1 {
+    @include header(1.5em);
+  }
+  h3{
+    font-size: .8em;
+  }
+  @include flex-container(center, bottom);
+  @include e("img"){
+    @include bg-img("../img/jam.jpg");
+    @include flex-container(center, middle);
+    height: 350px;
+    width: 600px;
+    color: white;
+  }
+}
