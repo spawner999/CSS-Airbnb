@@ -4,30 +4,24 @@
 
 .hero{
   height: 400px;
-  @include flex-grid-column(12);
-  @include flex-grid-row();
-  @include flex-align(center, bottom);
+  @include flex-container(center, bottom);
   @include bg-img("../img/Dolores.jpg");
   @include e("header"){
     @include flex-grid-column(12);
     text-align: center;
     color: white;
     h1{
-      font-size: 3em;
-      font-weight: bold;
-      line-height: .8em;
+      @include header(3em);
     }
   }
   @include e("form"){
-    @include flex-grid-column(12);
-    @include flex-grid-row(12);
+    @include flex-container();
     @include e("input"){
       @include flex-grid-column(10);
     }
     @include e("btn"){
       height: 39px;
-      background-color: $pink;
-      color: white;
+      @extend %button;
       @include flex-grid-column(2);
   }
 

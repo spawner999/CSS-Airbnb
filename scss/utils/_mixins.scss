@@ -54,3 +54,16 @@
   background-position: center;
   background-size: $width $height;
 }
+
+@mixin header($font-size, $color: inherit) {
+  font-size: $font-size;
+  font-weight: bold;
+  line-height: .8em;
+  color: $color;
+}
+
+@mixin flex-container($h-align: null, $v-align: null){
+  @include flex-grid-column(12);
+  @include flex-grid-row();
+  @include flex-align($h-align, $v-align);
+}
