@@ -11,7 +11,7 @@
     text-align: center;
     color: white;
     h1{
-      @include header(3em);
+      @include header(2.6em);
     }
   }
   @include e("form"){

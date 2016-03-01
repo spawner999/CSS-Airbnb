@@ -60,3 +60,20 @@
   border-bottom: 1px solid #e00007;
   padding: 0.3em;
 }
+
+%card {
+  @include bg-img("../img/jam.jpg");
+  @include flex-container(center, middle);
+  height: 350px;
+  width: 600px;
+  color: white;
+}
+
+%profile-div{
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-bottom: 1em;
+}

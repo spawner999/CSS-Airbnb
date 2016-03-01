@@ -1,16 +1,24 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the weekend div of the site/application.
+// This file contains all styles related to the explore div of the site/application.
 // -----------------------------------------------------------------------------
-.weekend{
-  padding: 4em 0;
+
+.explore {
   background-color: #EDEFED;
   color: #565A5C;
   text-align: center;
+  @include flex-container(center, bottom);
   h1 {
     @include header(1.5em);
   }
-  @include flex-container(center, bottom);
   @include e("img"){
     @extend %card;
+    @include m("bnb"){
+    @extend %card;
+    .profile-pic {
+      @include bg-img("../img/profile.jpg")
+      @extend %profile-div;
+    }
+
+    }
   }
 }
