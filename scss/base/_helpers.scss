@@ -77,3 +77,17 @@
   border-radius: 100%;
   margin-bottom: 1em;
 }
+
+%footer-list {
+  @include flex-container(center, middle);
+  list-style:none;
+  padding: 1em 0;
+  li {
+    @include flex-grid-column(shrink);
+    font-size: .6em;
+    text-align: center;
+  }
+  a{
+    color: white;
+  }
+}

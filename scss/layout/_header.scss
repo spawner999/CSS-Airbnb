@@ -11,7 +11,7 @@
   }
   @include e("logo"){
     height: 32px;
-    width: 103px;
+    width: 120px;
     @include flex-grid-column(shrink);
     @include bg-img("../img/logo.png");
   }

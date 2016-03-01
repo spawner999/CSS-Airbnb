@@ -18,7 +18,16 @@
       @include bg-img("../img/profile.jpg")
       @extend %profile-div;
     }
-
+    a{
+      @include flex-grid-column(12);
+      text-align: left;
+      background-color: transparent;
+      color: white;
+      font-size: 1.3em;
+      span {
+        background-color: #565A5C;
+      }
+    }
     }
   }
 }
